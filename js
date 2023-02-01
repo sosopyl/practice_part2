@@ -154,3 +154,72 @@
 //     elem2.appendChild(remove)
 
 // }
+
+//342
+
+//1 and 2
+
+// let elems = document.querySelectorAll('p')
+
+// for(let elem of elems){
+//     let a = document.createElement('a')
+//     a.textContent = ' перечернуть'
+//     a.href = '#'
+//     elem.appendChild(a)
+//     a.addEventListener('click', function(){
+//         let elem2 = elem.querySelector('span')
+//         elem2.classList.add('style')
+//         this.remove()
+//     })
+// }
+
+//3 and 4
+
+// let trs = document.querySelectorAll('#table tr')
+// for(let tr of trs){
+//     let td = document.createElement('td')
+//     let a = document.createElement('a')
+//     a.href = "#"
+//     a.textContent = "green"
+//     a.addEventListener('click', function(){
+//         if(tr.matches('.green')== false)
+// {        tr.classList.add('green')} else {
+//     tr.classList.remove('green')
+// }
+//     })
+//     td.appendChild(a)
+//     tr.appendChild(td)
+// }
+
+///343
+// let elem = document.querySelector('#elem');
+
+// let hide = document.querySelector('#hide');
+// hide.addEventListener('click', function() {
+//     if(elem.matches('.hidden') == false)
+// 	{elem.classList.add('hidden')} else{
+//         elem.classList.remove('hidden')
+//     }
+// });
+
+///344
+
+// let buttons = document.querySelectorAll('button');
+// let elems   = document.querySelectorAll('p');
+
+// for (let i = 0; i < buttons.length; i++) {
+// 	buttons[i].addEventListener('click', function() {
+// 		elems[i].classList.toggle('hidden');
+// 	});
+// }
+
+//345
+// let elems = document.querySelectorAll('li')
+// for(let elem of elems){
+//     elem.addEventListener('click', function(){
+//         if(elem.matches('.active') == false)
+//         {elem.classList.add('active')} else {
+//             elem.classList.remove('active')
+//         }
+//     })
+// }
